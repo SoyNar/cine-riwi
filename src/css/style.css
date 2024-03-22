@@ -1,0 +1,28 @@
+/* variable para poner color
+en el color se le pone -- */
+/* tambien sirven para almacenar tamaños de letra o datos */
+:root{
+    --azul-turquesa:#0971a4;
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--azul-turquesa);
+    padding:1em;
+}
+ul{
+    display: flex;
+    gap:2em;
+}
+li{
+    list-style: none;
+    display: flex;
+    margin:0.6em;
+    background: red;
+}
+a{
+margin:1em;
+}
