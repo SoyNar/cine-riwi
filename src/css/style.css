@@ -2,43 +2,103 @@
 en el color se le pone -- */
 /* tambien sirven para almacenar tamaños de letra o datos */
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: "Calistoga", serif;
     background-color: #f3e1c7;
-    
+
 }
-:root{
-    --azul-turquesa:#06d6d5;
+
+:root {
+    --azul-turquesa: #06d6d5;
+    --white: #ffffff;
+    --iconos-colors: #0d2074;
 }
-.header{
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* para poner colores var */
-    background: var(--azul-turquesa);  
-    padding:1em;
+    background: var(--azul-turquesa);
+    padding: 1em;
+    margin-bottom: 1em;
 }
-.title{
-    
-}
-ul{
+
+.title {}
+
+ul {
     display: flex;
-    gap:1em;
+    gap: 1em;
 }
-li{
+
+li {
     list-style: none;
     display: flex;
     align-items: center;
 }
-a{
-margin:0.5em;
-color: #ffffff;
-font-weight: bold;
-text-decoration: none;
+
+a {
+    margin: 0.5em;
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+i {
+    color: var(--iconos-colors);
+    font-weight: bold;
+}
+
+/* section estrenos */
+.main{
+    /* width: 100%;
+    display: flex; */
+}
+.main h2{
+    text-align: center;
+    font-size: 3em;
+    margin-top:2em;
+}
+.estrenos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:0.2em;
+    margin: 1em 3em;
+   
+}
+
+.estreno-uno, .estreno-dos, .estreno-tres{
+    width: 30%;
+    border: 0.2em solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #06d6d5;
+    text-align: center;
+}
+img{
+    height: 25em;
+    width: 90%;
+}
+.estreno-uno p, .estreno-dos p, .estreno-tres p{
+    margin:0.2em;
+}
+
+/* estilos button */
+
+/* section cartelera */
+.cartelera{
+    background: firebrick;
 }
