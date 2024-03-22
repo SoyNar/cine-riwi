@@ -1,28 +1,44 @@
 /* variable para poner color
 en el color se le pone -- */
 /* tambien sirven para almacenar tamaños de letra o datos */
-:root{
-    --azul-turquesa:#0971a4;
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
+body{
+    font-family: "Calistoga", serif;
+    background-color: #f3e1c7;
+    
+}
+:root{
+    --azul-turquesa:#06d6d5;
+}
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--azul-turquesa);
+    /* para poner colores var */
+    background: var(--azul-turquesa);  
     padding:1em;
+}
+.title{
+    
 }
 ul{
     display: flex;
-    gap:2em;
+    gap:1em;
 }
 li{
     list-style: none;
     display: flex;
-    margin:0.6em;
-    background: red;
+    align-items: center;
 }
 a{
-margin:1em;
+margin:0.5em;
+color: #ffffff;
+font-weight: bold;
+text-decoration: none;
 }
