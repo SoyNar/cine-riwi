@@ -12,14 +12,14 @@ en el color se le pone -- */
 
 body {
     font-family: "Calistoga", serif;
-    background-color: #f3e1c7;
+    background-color:  var(--white);
 
 }
 
 :root {
-    --azul-turquesa: #06d6d5;
+    --color-barras: #7e2f82;
     --white: #ffffff;
-    --iconos-colors: #0d2074;
+    --iconos-colors: #d27598;
 }
 
 .header {
@@ -27,12 +27,15 @@ body {
     align-items: center;
     justify-content: space-between;
     /* para poner colores var */
-    background: var(--azul-turquesa);
+    background: var(--color-barras);
     padding: 1em;
     margin-bottom: 1em;
 }
 
-.title {}
+.title {
+    color:var(--white);
+    font-size: 3em;
+}
 
 ul {
     display: flex;
@@ -58,10 +61,7 @@ i {
 }
 
 /* section estrenos */
-.main{
-    /* width: 100%;
-    display: flex; */
-}
+
 .main h2{
     text-align: center;
     font-size: 3em;
@@ -77,28 +77,126 @@ i {
    
 }
 
-.estreno-uno, .estreno-dos, .estreno-tres{
-    width: 30%;
-    border: 0.2em solid black;
+.estreno-{
+    width: 20%;
+    border: 0.1em solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1em;
-    background-color: #06d6d5;
     text-align: center;
 }
-img{
-    height: 25em;
-    width: 90%;
+.estreno- figcaption{
+    margin: 1em 0;
 }
-.estreno-uno p, .estreno-dos p, .estreno-tres p{
+img{
+    height: 16em;
+    width: 100%;
+}
+.estreno- p{
     margin:0.2em;
+}
+.estreno- button{
+    width: 40%;
+    height: 2em;
+    margin: 1em;
+    background-color: var(--color-barras);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 0.6em;
+}
+.title-streno{
+    font-size: 1em;
+    margin-bottom: 0.3em;
 }
 
 /* estilos button */
 
 /* section cartelera */
+
 .cartelera{
-    background: firebrick;
+    background:#f2db8a;
 }
+.cartelera span, h2{
+    font-size: 1em;
+    margin-bottom: 3em;
+    
+}
+
+
+.container-cartelera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:0.2em;
+}
+
+.pelicula{
+    width: 19%;
+    display:flex;
+   flex-direction:column ;
+   justify-content: center;
+   align-items: center;
+   border: 0.1em solid var(--iconos-colors);
+}
+.pelicula figcaption, p{
+    margin: 1em 0;
+}
+.pelicula button{
+    width: 40%;
+    height: 2em;
+    margin: 1em;
+    background-color: var(--color-barras);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 0.6em;
+}
+/* Section Contacto */
+.contacto h2{
+    font-size: 0.2em;
+    margin: 2em;
+
+}
+/* .title-contac {
+    font-size: 0.2em;
+} */
+
+.contact{
+    background: #f2db8a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 20em;
+ }
+ form{
+    width: 80%;
+ }
+
+ .container-form input{
+    width: 80%;
+    height: 3em;
+    margin:0.5em;
+    padding: 1em;
+ }
+
+
+/* Footer */
+.footer{
+    height: 3em;
+    background-color: var(--color-barras);
+    text-align: center;
+    font-weight: bold;
+}
+.text-footer{
+}
+
