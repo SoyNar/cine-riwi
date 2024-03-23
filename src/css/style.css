@@ -97,6 +97,7 @@ i {
 }
 .estreno- figcaption{
     margin: 1em 0;
+    font-weight: bold;
 }
 .estreno-:hover{
     transform: translateY(-3%);
@@ -171,6 +172,7 @@ img{
 }
 .pelicula figcaption, p{
     margin: 1em 0;
+    font-weight:bold;
 }
 .pelicula:hover{
     box-shadow: 0 0.2em #af1c92;
@@ -244,12 +246,15 @@ img{
 
 /* Footer */
 .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 3em;
     background-color: var(--color-barras);
     text-align: center;
     font-weight: bold;
     margin-top:2em;
+    color: var(--white);
 }
-.text-footer{
-}
+
 
