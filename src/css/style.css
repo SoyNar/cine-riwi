@@ -154,39 +154,58 @@ img{
     border-radius: 0.6em;
 }
 /* Section Contacto */
-.contacto h2{
-    font-size: 0.2em;
-    margin: 2em;
 
+.title-contac {
+    font-size: 3em;
+    margin: 2em;
 }
-/* .title-contac {
-    font-size: 0.2em;
-} */
 
 .contact{
-    background: #f2db8a;
+    width: 100%;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4em;
 }
  .container-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    height: 20em;
+    width: 90%;
+    height: 30em;
+    margin-bottom: 4em;
  }
  form{
-    width: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+        
  }
 
  .container-form input{
-    width: 80%;
+    width: 90%;
     height: 3em;
-    margin:0.5em;
+    margin-bottom:2em;
     padding: 1em;
+    
+ }
+ .container-form fieldset{
+    width: 100%;
+    padding: 1em;
+    margin: 3em;
+ }
+ form .enviar-form{
+    text-align: center;
+    width: 50%;
+    height: 3em;
+    margin: 0.2em;
+    background-color: var(--color-barras);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 0.8em;
  }
 
 
@@ -196,6 +215,7 @@ img{
     background-color: var(--color-barras);
     text-align: center;
     font-weight: bold;
+    margin-top:2em;
 }
 .text-footer{
 }
